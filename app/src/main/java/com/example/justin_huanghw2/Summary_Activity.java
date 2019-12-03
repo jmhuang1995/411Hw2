@@ -49,7 +49,6 @@ public class Summary_Activity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.add_student_screen_menu, menu);
         detailMenu = menu;
-//        menu.findItem(R.id.action_student_edit).setVisible(false);
         menu.findItem(R.id.action_student_done).setVisible(false);
         menu.findItem(R.id.action_add_student).setVisible(true);
         return super.onCreateOptionsMenu(menu);
@@ -57,9 +56,7 @@ public class Summary_Activity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-//        if (item.getItemId() == R.id.action_student_edit) {
-//            Log.d(TAG, "Unintended \"edit\" button clicked on menu");
-//        } else
+
         if (item.getItemId() == R.id.action_student_done) {
             Log.d(TAG, "Unintended \"done\" button clicked on menu");
         } else if (item.getItemId() == R.id.action_add_student) {
