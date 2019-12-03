@@ -32,7 +32,6 @@ public class AddCourse extends AppCompatActivity {
 
         studentIndex = getIntent().getIntExtra(Student_Activity.LocationOfStudentIndex, 0);
 
-//        Student sObj = StudentDB.getInstance().getStudents().get(studentIndex);
         EditText newCourseNameView = (EditText) findViewById(R.id.new_course_name_id);
         EditText newLetterGradeView = (EditText) findViewById(R.id.new_grade_letter_id);
 
@@ -46,7 +45,6 @@ public class AddCourse extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.add_course_screen_menu, menu);
         detailMenu = menu;
 
-//        menu.findItem(R.id.action_student_edit).setVisible(false);
         menu.findItem(R.id.action_add_new_course_done).setVisible(true);
         menu.findItem(R.id.action_edit_new_course).setVisible(false);
 
